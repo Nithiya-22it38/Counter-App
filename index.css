@@ -1,40 +1,53 @@
 body {
     background-image: url("img.jpg");
     background-size: cover;
-    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
+
 .container {
     background: white;
-    max-width: 80%;
-    margin: auto;
+    max-width: 500px;
+    width: 80%;
+    padding: 20px;
     border: 3px solid black;
     border-radius: 10px;
-    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    font-size: 28px;
 }
 
 h2 {
     font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 10px 0 20px;
 }
 
 button {
-    border: 1px solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: none;
+    padding: 12px;
     color: white;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
+    width: 220px;
+    margin: 5px 0;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 #increment-btn {
@@ -47,4 +60,5 @@ button {
 
 #save-el {
     font-weight: bold;
+    font-size: 18px;
 }
